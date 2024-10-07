@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Pâtisserie</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#menu">Menu</a></li>
+                <li class="nav-item"><a href="#about">About Us</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+                <li class="nav-item"><a href="#locations">Locations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section-home">
+            <h1 class="main-title">Welcome to La Pâtisserie</h1>
+            <p class="main-description">Delicious baked goods, fresh daily.</p>
+            <img src="./assets/images/sarah-elizabeth-dLNu65g0jMA-unsplash.jpg" alt="Bakery Shelf">
+        </section>
+
+        <section id="menu" class="section-menu">
+            <h2 class="section-title">Menu</h2>
+            <p class="section-description">Explore our selection of breads, pastries, and more.</p>
+        </section>
+
+        <section id="about" class="section-about">
+            <h2 class="section-title">About Us</h2>
+            <p class="section-description">La Pâtisserie is a family-owned bakery with a passion for baking the best treats in town.</p>
+        </section>
+
+        <section id="contact" class="section-contact">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-description">Reach out for inquiries or custom orders.</p>
+            <form class="contact-form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" class="form-input" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" class="form-input" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" class="form-textarea" rows="4" cols="50" required></textarea><br><br>
+
+                <button type="submit" class="form-button">Submit</button>
+            </form>
+        </section>
+
+        <section id="locations" class="section-locations">
+            <h2 class="section-title">Our Locations</h2>
+            <p class="section-description">Find us at multiple locations across the city.</p>
+        </section>
+    </main>
+</body>
+</html>
