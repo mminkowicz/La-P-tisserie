@@ -95,6 +95,29 @@ header h1 {
     margin-bottom: 20px;
 }
 
+/* Gallery Grid Styling */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Space between images */
+    justify-items: center; /* Center images in each grid item */
+}
+
+.gallery-grid img {
+    width: 100%;
+    max-width: 250px; /* Set a uniform size for the images */
+    height: 250px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensure the images are cropped nicely to fit */
+    border-radius: 12px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+
 /* Contact Us Section */
 .contact-section {
     max-width: 800px;
@@ -175,4 +198,60 @@ footer p {
     header h1 {
         font-size: 2.5rem;
     }
+}
+
+
+
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f5f0; /* Soft background to create warmth */
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #faf3e0; /* Light pastel background for the header */
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif; /* Elegant serif font */
+    font-size: 3rem;
+    color: #5c4033; /* Warm brown for a welcoming feel */
+    margin-bottom: 30px;
+}
+
+/* Image Styling */
+.header-image {
+    width: 80%; /* Adjust the image width for responsiveness */
+    max-width: 1200px; /* Ensure the image doesn't exceed a large screen size */
+    height: auto; /* Keep the aspect ratio */
+    border-radius: 15px; /* Smooth corners to give a modern look */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 50px; /* Spacing below the image */
+}
+
+/* Responsiveness for Smaller Screens */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .header-image {
+        width: 90%; /* Expand the image for smaller screens */
+        margin-bottom: 30px;
+    }
+}
+
+
+video {
+    max-width: 100%; /* Ensure the video does not exceed the container width */
+    height: auto; /* Maintain the video aspect ratio */
+    border-radius: 12px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Add space below the video */
 }
