@@ -1,62 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Pâtisserie</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La-P-Tisserie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#home">Home</a></li>
-                <li class="nav-item"><a href="#menu">Menu</a></li>
-                <li class="nav-item"><a href="#about">About Us</a></li>
-                <li class="nav-item"><a href="#contact">Contact</a></li>
-                <li class="nav-item"><a href="#locations">Locations</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#header">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
 
-    <main>
-        <section id="home" class="section-home">
-            <h1 class="main-title">Welcome to La Pâtisserie</h1>
-            <p class="main-description">Delicious baked goods, fresh daily.</p>
-            <img src="./assets/images/sarah-elizabeth-dLNu65g0jMA-unsplash.jpg" alt="Bakery Shelf">
-        </section>
+  <!-- Header Section -->
+  <header id="header">
+    <h1>La-P-Tisserie</h1>
+  </header>
 
-        <section id="menu" class="section-menu">
-            <h2 class="section-title">Menu</h2>
-            <p class="section-description">Explore our selection of breads, pastries, and more.</p>
-        </section>
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2>About</h2>
+    <p>Welcome to <strong>La Pâtisserie</strong>, where we blend traditional French techniques with modern creativity to craft artisanal pastries that delight your senses. Our bakery is built on a passion for perfection and a love for the art of baking, offering an indulgent array of freshly baked goods, from flaky croissants and delicate macarons to savory quiches and gourmet cakes.</p>
+    <p>At La Pâtisserie, each creation is made with the finest ingredients, ensuring every bite is a moment of pure delight. Our skilled pâtissiers pour their heart into every batch, whether it's your morning croissant or a custom cake for your special celebration.</p>
+    <p>Our commitment to quality, innovation, and authenticity is what sets us apart. Whether you're here for a quick treat, a luxurious dessert, or to cater an event, we promise an experience as sweet as our pastries. Step into our world of sweetness and let us take you on a journey through the flavors of France—right in your neighborhood.</p>
+    <p><strong>La Pâtisserie—where tradition meets taste.</strong></p>
+  </section>
 
-        <section id="about" class="section-about">
-            <h2 class="section-title">About Us</h2>
-            <p class="section-description">La Pâtisserie is a family-owned bakery with a passion for baking the best treats in town.</p>
-        </section>
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery-section">
+    <h2>Gallery</h2>
+    <!-- Placeholder for images/videos -->
+  </section>
 
-        <section id="contact" class="section-contact">
-            <h2 class="section-title">Contact Us</h2>
-            <p class="section-description">Reach out for inquiries or custom orders.</p>
-            <form class="contact-form">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" class="form-input" required><br><br>
+  <!-- Contact Us Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <form>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+      </div>
+      <div>
+        <label for="email">Email address</label>
+        <input type="email" id="email" required>
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" rows="3" required></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" class="form-input" required><br><br>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 La Pâtisserie. All rights reserved.</p>
+  </footer>
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" class="form-textarea" rows="4" cols="50" required></textarea><br><br>
-
-                <button type="submit" class="form-button">Submit</button>
-            </form>
-        </section>
-
-        <section id="locations" class="section-locations">
-            <h2 class="section-title">Our Locations</h2>
-            <p class="section-description">Find us at multiple locations across the city.</p>
-        </section>
-    </main>
 </body>
+
 </html>
